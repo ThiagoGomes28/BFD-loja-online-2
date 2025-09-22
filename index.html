@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online - 2</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/imagens/favicon-loja.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <h1> Filtro de Produtos - Desafio 2</h1>
+    </header>
+
+    <div class="filtros">
+        <input type="text" id="busca" placeholder="Buscar Produto...">
+        <select id="filtro">
+            <option value="default" selected disabled>-- Selecione Um Filtro --</option>
+            <option value="az">Ordem Alfabética (A-Z)</option>
+            <option value="destaque">Produtos em Destaque</option>
+            <option value="menor">Menor Preço</option>
+            <option value="maior">Maior Preço</option>
+        </select>
+
+    </div>
+
+    <div class="listaProdutos" id="lista-produtos">
+        <!-- Produtos -->
+    </div>
+
+    <!-- Carrinho -->
+    <div class="carrinho">
+        <h2>Carrinho</h2>
+        <div id="lista-carrinho"></div>
+        <div class="total">Total: R$ <span id="total">0</span></div>
+    </div>
+
+    <script src="./assets/scripts/index.js"></script>
+</body>
+
+</html>
